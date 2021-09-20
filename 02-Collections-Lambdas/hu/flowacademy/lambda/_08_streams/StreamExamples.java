@@ -1,9 +1,6 @@
 package hu.flowacademy.lambda._08_streams;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.StringJoiner;
+import java.util.*;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,28 +8,29 @@ import java.util.stream.Stream;
 public class StreamExamples {
 
     public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
-        test4();
+//        test1();
+//        test2();
+//        test3();
+//        test4();
     }
 
     public static void test1() {
         //Hogyan javithatnank performancia szempontbol?
-        Stream.of("d2", "a2", "b1", "b3", "c")
-                .filter(s -> {
-                    System.out.println("filter: " + s);
-                    return s.startsWith("a");
+        Set<String> result = Stream.of("d2", "a2", "b1", "b3", "c4")
+                .map(s -> {
+                    System.out.println("map: " + s);
+                    return s.toUpperCase();
                 })
                 .sorted((s1, s2) -> {
                     System.out.printf("sort: %s; %s\n", s1, s2);
                     return s1.compareTo(s2);
                 })
-                .map(s -> {
-                    System.out.println("map: " + s);
-                    return s.toUpperCase();
+                .filter(s -> {
+                    System.out.println("filter: " + s);
+                    return s.endsWith("2");
                 })
                 .collect(Collectors.toSet());
+        System.out.println(result);
     }
 
     public static void test2() {
@@ -41,8 +39,8 @@ public class StreamExamples {
                 Stream.of("d2", "a2", "b1", "b3", "c")
                         .filter(s -> s.startsWith("a"));
 
-        stream.anyMatch(s -> true);    // ok
-        stream.noneMatch(s -> true);   // exception
+        System.out.println(stream.anyMatch(s -> s.endsWith("2")));    // ok
+        System.out.println(stream.noneMatch(s -> s.endsWith("4")));   // exception
     }
 
     public static void test3() {

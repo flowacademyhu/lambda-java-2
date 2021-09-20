@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class SimpleStreamExample {
+public class AdvancedStreamExample {
     public static void orderOfEvaluationExample() {
         /*
             NOTE: below example would ordinarily be written as:
