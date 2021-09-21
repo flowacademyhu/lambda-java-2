@@ -35,8 +35,7 @@ public class WordCount {
 
     public static void main(String[] args) throws Exception {
         File f = new File(args[0]);
-        mostFrequentWords(f, Integer.parseInt(args[1])).stream()
-            .sorted()
-            .forEach(System.out::println);
+        List<String> mostFrequentWords = mostFrequentWords(f, Integer.parseInt(args[1]));
+        System.out.println(mostFrequentWords);
     }
 }
