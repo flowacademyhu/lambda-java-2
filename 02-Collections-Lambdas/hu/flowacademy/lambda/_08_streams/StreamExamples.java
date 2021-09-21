@@ -8,13 +8,37 @@ import java.util.stream.Stream;
 public class StreamExamples {
 
     public static void main(String[] args) {
-//        test1();
-//        test2();
-//        test3();
-//        test4();
+        acronym();
+        performance();
+        streamProcessedTwice();
+        groupingByCollector();
+        joinerCollector();
+
+        // "USA"
     }
 
-    public static void test1() {
+    private static void acronym() {
+        String fullName = "United States of America";
+
+        // órai példa
+        String acronym1 = new Scanner(fullName).tokens()
+                .filter(word -> word.length() > 2)
+                .map(word -> word.substring(0, 1))
+                .collect(Collectors.joining());
+
+        System.out.println(acronym1);
+
+        // az óra végén kipróbáltuk, hogy lehet leválogatni az összes nagybetűt:
+        String acronym2 = fullName.chars()
+                .mapToObj(c -> (char) c)
+                .filter(c -> Character.isUpperCase(c))
+                .map(c -> String.valueOf(c))
+                .collect(Collectors.joining());
+
+        System.out.println(acronym2);
+    }
+
+    public static void performance() {
         //Hogyan javithatnank performancia szempontbol?
         Set<String> result = Stream.of("d2", "a2", "b1", "b3", "c4")
                 .map(s -> {
@@ -33,7 +57,7 @@ public class StreamExamples {
         System.out.println(result);
     }
 
-    public static void test2() {
+    public static void streamProcessedTwice() {
         //Javítsd
         Stream<String> stream =
                 Stream.of("d2", "a2", "b1", "b3", "c")
@@ -43,7 +67,7 @@ public class StreamExamples {
         System.out.println(stream.noneMatch(s -> s.endsWith("4")));   // exception
     }
 
-    public static void test3() {
+    public static void groupingByCollector() {
         List<Person> persons =
                 Arrays.asList(
                         new Person("Max", 18),
@@ -61,9 +85,18 @@ public class StreamExamples {
         // age 18: [Max]
         // age 23: [Peter, Pamela]
         // age 12: [David]
+
+        // megvalósítás saját collectorral:
+        Map<Integer, List<Person>> personsByAge2 = persons
+                .stream()
+                .collect(
+                        () -> new HashMap<Integer, List<Person>>(),
+                        (map, person) -> map.computeIfAbsent(person.age, (p) -> new ArrayList<>()).add(person),
+                        (map1, map2) -> map1.putAll(map2)
+                );
     }
 
-    public static void test4() {
+    public static void joinerCollector() {
         List<Person> persons =
                 Arrays.asList(
                         new Person("Max", 18),
@@ -83,6 +116,13 @@ public class StreamExamples {
                 .collect(personNameCollector);
 
         System.out.println(names);  // MAX | PETER | PAMELA | DAVID
+
+        String over18Names = persons
+                .stream()
+                .filter(p -> p.age >= 18)
+                .map(p -> p.name)
+                .collect(Collectors.joining(", "));
+
     }
 
     static class Person {
