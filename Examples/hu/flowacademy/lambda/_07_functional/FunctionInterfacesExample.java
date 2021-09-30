@@ -1,6 +1,8 @@
 package hu.flowacademy.lambda._07_functional;
 
+import java.nio.file.DirectoryStream;
 import java.util.*;
+import java.util.concurrent.Flow;
 import java.util.function.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -145,11 +147,38 @@ public class FunctionInterfacesExample {
 
     }
 
+    public  static void print(String s) {
+        System.out.println(s);
+    }
+
     public static void main(String[] args) {
-        new FunctionInterfacesExample().test_Consumer();
+
+//        Consumer<String> print = FunctionInterfacesExample::print;
+//        Consumer<String> print2 = s -> FunctionInterfacesExample.print(s);
+//
+//        Predicate<String> stringFilter = myString::startsWith;
+//        Predicate<String> stringFilter2 = s -> {return myString.startsWith(s);};
+//
+//        Function<String, String> myfunc = String::valueOf;
+//
+//        String mystring = "alma";
+//        Function<String, Integer> stringIntegerFunction = String::length;
 
 
-        Function<String, Double> func = Double::valueOf;
+        String myString = "alma123";
+        Predicate<String> myStringStartsWith = myString::startsWith;
+        BiFunction<String, String, Boolean> stringStartsWith = String::startsWith;
+
+        System.out.println(myStringStartsWith.test("alma"));
+        System.out.println(stringStartsWith.apply("alma456", "alma"));
+
+        Supplier<ArrayList> newArrayList = ArrayList::new;
+
+        IntToDoubleFunction myIntSupplier = (i) -> (double) i;
+
+        ArrayList arrayList = newArrayList.get();
+//
+//        Stream.of("alma", "körte").filter(myString::startsWith).forEach(System.out::println);
     }
 
 }

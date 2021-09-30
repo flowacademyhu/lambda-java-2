@@ -17,8 +17,13 @@ public class FunctionsExample {
     private static final Logger logger = Logger.getLogger(FunctionsExample.class.getName());
 
     public static void logDebug(Supplier<String> message) {
-        if (logger.isLoggable(Level.FINE)) {
+        if (false) {
             logger.log(Level.FINE, message.get());
+        }
+    }
+    public static void logDebug2(String message) {
+        if (false) {
+            logger.log(Level.FINE, message);
         }
     }
 
@@ -40,18 +45,19 @@ public class FunctionsExample {
     public static void main(String[] args) {
         // Here we can see how our own interface can also be defined
         // with a method reference. It could also be defined with a lambda.
-        var x = useMyFunction(String::toUpperCase, "abrakadabra");
-        System.out.println("Using our own MyFunction to uppercase a string: " + x);
-
-        // Test out various compositions:
-        System.out.println("TRICE_SQUARED(10): " + TRICE_SQUARED.applyAsInt(10));
-        System.out.println("SQUARED_TRICE(10): " + SQUARED_TRICE.applyAsInt(10));
+//        var x = useMyFunction(String::toUpperCase, "abrakadabra");
+//        System.out.println("Using our own MyFunction to uppercase a string: " + x);
+//
+//        // Test out various compositions:
+//        System.out.println("TRICE_SQUARED(10): " + TRICE_SQUARED.applyAsInt(10));
+//        System.out.println("SQUARED_TRICE(10): " + SQUARED_TRICE.applyAsInt(10));
 
         // LogDebug is taking a supplier; new Date() is only evaluated when needed.
         for (int i = 0; i < 200; ++i) {
             // Only effective finals
             final int j = i;
             logDebug(() -> "Started up at " + now() + " " + j);
+//            logDebug2("Started up at " + now() + " " + j);
         }
     }
 }

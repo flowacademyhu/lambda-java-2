@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa36acc9-edac-4c7c-91e8-1132bddc5dfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-Collections-Lambdas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_01_collections/CollectionExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_01_collections/ComparableComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_01_collections/QueueExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_01_collections/Runway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_01_collections/TwoKeyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_02_lambdas/AnonymousClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_02_lambdas/LambdaExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_02_lambdas/LambdaExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_06_enums/EnumMapExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_06_enums/EnumSetExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_07_functional/FunctionInterfacesExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_07_functional/FunctionsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/AdvancedStreamExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/Cards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/ParallelStreamExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/StreamExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hu/flowacademy/lambda/_08_streams/WordCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/src/main/resources/text.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar!/org/junit/jupiter/api/Assertions.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1yN6gmlJj68G6DbBD0hIu0RHvmA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../3rd/keycloak/services" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\flow\Java-2\lambda-java-2\Examples\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="hu.flowacademy.lambda._01_collections" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="hu.flowacademy.lambda._01_collections" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ThreadingExample1">
+    <configuration name="AdvancedStreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hu.flowacademy.lambda._08_streams.AdvancedStreamExample" />
+      <module name="02-Collections-Lambdas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.flowacademy.lambda._08_streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadingExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hu.flowacademy.lambda._09_concurrency.ThreadingExample1" />
+      <module name="Examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.flowacademy.lambda._09_concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoKeyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="02-Collections-Lambdas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.flowacademy.lambda._01_collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.flowacademy.lambda._01_collections" />
+      <option name="MAIN_CLASS_NAME" value="hu.flowacademy.lambda._01_collections.TwoKeyMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoKeyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.flowacademy.lambda._01_collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.flowacademy.lambda._01_collections" />
+      <option name="MAIN_CLASS_NAME" value="hu.flowacademy.lambda._01_collections.TwoKeyMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoKeyMapTest.get" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="02-Collections-Lambdas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hu.flowacademy.lambda._01_collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hu.flowacademy.lambda._01_collections" />
+      <option name="MAIN_CLASS_NAME" value="hu.flowacademy.lambda._01_collections.TwoKeyMapTest" />
+      <option name="METHOD_NAME" value="get" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Examples [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/../Examples" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadingExample1" />
+        <item itemvalue="Maven.Examples [test]" />
+        <item itemvalue="JUnit.TwoKeyMapTest.get" />
+        <item itemvalue="JUnit.TwoKeyMapTest" />
+        <item itemvalue="Application.AdvancedStreamExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa36acc9-edac-4c7c-91e8-1132bddc5dfc" name="Changes" comment="" />
+      <created>1632079812183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632079812183</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="map.getOrDefault(k1, Map.of()).get(k2)" />
+        <watch expression="map.getOrDefault(k1, Map.of())" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

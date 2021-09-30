@@ -1,6 +1,9 @@
 package hu.flowacademy.lambda._08_streams;
 
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -8,13 +11,40 @@ import java.util.stream.Stream;
 public class StreamExamples {
 
     public static void main(String[] args) {
-        acronym();
-        performance();
-        streamProcessedTwice();
-        groupingByCollector();
-        joinerCollector();
+//        acronym();
+//        performance();
+//        streamProcessedTwice();
+//        groupingByCollector();
+//        joinerCollector();
 
-        // "USA"
+        List<Person> persons =
+                Arrays.asList(
+                        new Person("Max", 18),
+                        new Person("Peter", 23),
+                        new Person("Pamela", 23),
+                        new Person("David", 12));
+
+        Predicate<Person> stratsWithP = p -> p.name.startsWith("X");
+        Predicate<Person> over18 = p -> p.age >= 18;
+
+        Function<Person, String> getName = p -> p.name;
+        Function<String, Integer> countChars = s -> s.length();
+
+        Function<Person, Integer> getNameCharCount = getName.andThen(countChars);
+
+        Consumer<Object> log = System.out::println;
+        Consumer<Object> log2 = (o) -> {
+            System.out.println("!");
+        };
+
+        Optional<Person> firstP = persons.stream().filter(stratsWithP).findFirst();
+        if (firstP.isPresent()) {
+        }
+
+        Optional<Person> optionalPerson = Optional.ofNullable(persons.get(0));
+        Optional<Person> optionalPerson2 = Optional.ofNullable(null);
+
+        System.out.println(optionalPerson2.orElse(persons.get(1)));
     }
 
     private static void acronym() {
@@ -90,6 +120,7 @@ public class StreamExamples {
         Map<Integer, List<Person>> personsByAge2 = persons
                 .stream()
                 .collect(
+//                        HashMap::new,
                         () -> new HashMap<Integer, List<Person>>(),
                         (map, person) -> map.computeIfAbsent(person.age, (p) -> new ArrayList<>()).add(person),
                         (map1, map2) -> map1.putAll(map2)
@@ -103,6 +134,22 @@ public class StreamExamples {
                         new Person("Peter", 23),
                         new Person("Pamela", 23),
                         new Person("David", 12));
+
+        // példák:
+        Predicate<Person> stratsWithP = p -> p.name.startsWith("X");
+        Predicate<Person> over18 = p -> p.age >= 18;
+
+        stratsWithP.or(over18);
+
+
+        // predicate1: több mint 3 karakteres név
+        // predicate2: kora páros
+
+        // egyik vagy másik teljesüljön
+        // Person to String átalakítás legyen megvalósítva toString metódus referenciával
+        // végén join vesszővel
+
+
 
         Collector<Person, StringJoiner, String> personNameCollector =
                 Collector.of(
@@ -120,7 +167,7 @@ public class StreamExamples {
         String over18Names = persons
                 .stream()
                 .filter(p -> p.age >= 18)
-                .map(p -> p.name)
+                .map(Person::toString)
                 .collect(Collectors.joining(", "));
 
     }

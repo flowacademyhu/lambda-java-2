@@ -39,8 +39,9 @@ public class AdvancedStreamExample {
     private static void randomInts() {
         // Random.ints(), Random.longs(), and Random.doubles() provide
         // infinite streams of random numbers.
-        var rs = new Random().ints().limit(10);
-        rs.forEach(System.out::println);
+        new Random().ints()
+//                .limit(10)
+                .forEach(System.out::println);
     }
 
     static final class Fib {
@@ -115,10 +116,16 @@ public class AdvancedStreamExample {
     }
 
     public static void main(String[] args) {
-        orderOfEvaluationExample();
-        randomInts();
+//        orderOfEvaluationExample();
+//        randomInts();
 
-        fibIterate();
-        fibGenerate();
+//        Stream.iterate(
+//                "", (s) -> s + "a"
+//        ).limit(5).forEach(System.out::println);
+
+        Stream.generate(() -> new Random().nextInt()).limit(20).forEach(System.out::println);
+
+//        fibIterate();
+//        fibIterateGroupBy();
     }
 }

@@ -5,6 +5,7 @@ import java.util.function.*;
 
 public class AnonymousClass {
 
+    @FunctionalInterface
     static interface Hello {
         public void sayHi();
     }

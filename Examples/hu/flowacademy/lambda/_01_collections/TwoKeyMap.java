@@ -16,6 +16,7 @@ public class TwoKeyMap<K1, K2, V> {
     }
 
     public V put(K1 k1, K2 k2, V value) {
+        if (k1 == null || k2 == null) throw new IllegalArgumentException("Keys must not be null.");
         return map.computeIfAbsent(k1, i -> new HashMap<>()).put(k2, value);
     }
 
